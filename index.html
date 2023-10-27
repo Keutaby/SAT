@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo.css">
+    <title>Formulario SAT</title>
+</head>
+<body>
+    <h1>Formulario SAT</h1>
+    <form class="declara" id="contact_form" action="#">
+        <ul>
+            <li>
+                <span class="required notification">*Agregue sus Datos</span>
+            </li>
+
+            <li>
+                <label for="nombre">Nombre</label>
+                <input type="name" name="nombre" pattern="[A-Z a-z]" placeholder="nombre" maxlength="15" required>
+            </li>
+
+            <li>
+                <label for="apellido">Apellido</label>
+                <input type="name" name="apellido" pattern="[A-Z a-z]" placeholder="apellido" maxlength="30" required>
+            </li>
+
+            <li>
+                <label for="rfc">RFC</label>
+                <input type="text" name="rfc" pattern="[A-Z a-z]. {10,}" placeholder="10 a 13 caracteres" maxlength="13" required>
+            </li>
+
+            <li>
+                <label for="correo">Correo</label>
+                <input type="email" name="correo" pattern="[A-Z a-z]" placeholder="correo electronico" maxlength="325">
+            </li>
+
+            <li>
+                <label for="periodo">Mes</label>
+                <select name="periodo" id="" required>
+                    <option value="">opci&oacute;n</option>
+                    <option value="Enero">Enero</option>
+                    <option value="Febrero">Febrero</option>
+                    <option value="Marzo">Marzo</option>
+                    <option value="Abril">Abril</option>
+                    <option value="Mayo">Mayo</option>
+                    <option value="Junio">Junio</option>
+                    <option value="Julio">Julio</option>
+                    <option value="Agosto">Agosto</option>
+                    <option value="Septiembre">Septiembre</option>
+                    <option value="Octubre">Octubre</option>
+                    <option value="Noviembre">Noviembre</option>
+                    <option value="Diciembre">Diciembre</option>
+                </select>
+            </li>
+
+            <li>
+                <label for="fecha">¿Qu&eacute; d&iacute; a es hoy?</label>
+                <input type="date" name="fecha" min="2022-10-25" max="2023-10-25" value="<?php echo('Y-M-D');?>" maxlength="10">
+            </li>
+
+            <li>
+                <button class="submit" type="submit">Enviar</button>
+            </li>
+        </ul>
+    </form>
+</body>
+</html>
